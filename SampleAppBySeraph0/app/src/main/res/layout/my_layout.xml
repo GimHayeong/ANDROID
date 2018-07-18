@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="23dp"
+        android:text="안드로이드에 입문하신\n여러분을 환영합니다."
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:text="환영인사"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/btnWelcome"
+        android:layout_marginTop="39dp"
+        android:text="이름:" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblName"
+        android:layout_alignBottom="@+id/lblName"
+        android:layout_marginStart="88dp"
+        android:ems="10"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/lblPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblName"
+        android:layout_below="@+id/lblName"
+        android:layout_marginTop="12dp"
+        android:text="Password:" />
+
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblPwd"
+        android:layout_alignBottom="@+id/lblPwd"
+        android:layout_toEndOf="@+id/lblPwd"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPwd"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="320dp"
+        android:text="OK" />
+</RelativeLayout>

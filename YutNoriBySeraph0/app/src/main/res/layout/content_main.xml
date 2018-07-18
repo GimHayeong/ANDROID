@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.hyg.yutnoribyseraph0.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="윷을 던지세요!!!"
+        android:id="@+id/txtMsg" />
+
+    <ImageView
+        android:id="@+id/imgYut0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtMsg"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        app:srcCompat="@drawable/yut_1" />
+
+    <ImageView
+        android:id="@+id/imgYut1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtMsg"
+        android:layout_alignTop="@+id/imgYut0"
+        android:layout_marginEnd="14dp"
+        app:srcCompat="@drawable/yut_0" />
+
+
+    <ImageView
+        android:id="@+id/imgYut2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtMsg"
+        android:layout_alignTop="@+id/imgYut1"
+        android:layout_marginStart="38dp"
+        app:srcCompat="@drawable/yut_0" />
+
+
+    <ImageView
+        android:id="@+id/imgYut3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imgYut2"
+        app:srcCompat="@drawable/yut_0" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgYut1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="확인" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="결과" />
+
+
+</RelativeLayout>

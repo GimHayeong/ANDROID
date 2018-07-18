@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.hyg.seraph0.multinotepad.VoiceRecordingActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_size">
+        <TextView
+            android:id="@+id/txtRecordingTime"
+            android:text="00:00"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+            android:id="@+id/btnStartNStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+            android:id="@+id/btnCancel"
+            android:layout_weight="1"
+            android:text="@string/close_btn"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

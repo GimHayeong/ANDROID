@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.hyg.intentbyseraph0.DatetimeMainActivity">
+
+
+        <TextView
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="날짜와 시간을 한꺼번에 선택할 수 있는 복합위젯"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTimeMsg"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <org.hyg.intentbyseraph0.DatetimePicker
+                android:id="@+id/cwPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></org.hyg.intentbyseraph0.DatetimePicker>
+
+        </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.hyg.intentbyseraph0.WebviewMainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnOpenWeb"
+            android:text="Open"
+            android:padding="4dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtUrl"
+            android:textSize="20dp"
+            android:inputType="text|textCapWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--
+    button_image_01.9.png 파일을 리소스에 포함시키면 Resources의 ID에 오류 발생
+
+    <Button
+        android:text="small"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Medium Medium Medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Long Long Long Long Long Long Long"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    -->
+
+    <org.hyg.intentbyseraph0.BitmapButton
+        android:id="@+id/btnBmp"
+        android:layout_centerInParent="true"
+        android:text="시작"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:id="@+id/wvWeb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</LinearLayout>

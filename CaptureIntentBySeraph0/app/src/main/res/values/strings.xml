@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Capture by Intent</string>
+    <string name="capture_button_text">사진찍기</string>
+</resources>

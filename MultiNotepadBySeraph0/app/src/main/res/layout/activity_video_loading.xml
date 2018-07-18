@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.hyg.seraph0.multinotepad.VideoRecordingActivity">
+
+    <TextView
+        android:id="@+id/txtSelectedVideo"
+        android:text="Select Video"
+        android:textColor="#ffffffff"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff555555"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:id="@+id/latLoadingBottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+            android:id="@+id/btnOk"
+            android:layout_weight="1"
+            android:text="@string/confirm_btn"
+            android:layout_width="@dimen/zero_size"
+            android:layout_height="wrap_content" />
+        <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+            android:id="@+id/btnCancel"
+            android:text="@string/cancel_btn"
+            android:layout_weight="1"
+            android:layout_width="@dimen/zero_size"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstLoading"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingVertical="5dp"
+        android:layout_above="@+id/latLoadingBottom"
+        android:layout_below="@+id/txtSelectedVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.hyg.intentbyseraph0.SpinnerMainActivity">
+
+    <TextView
+        android:id="@+id/txtSelectedWord"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffffff"
+        android:textSize="40sp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spnWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+</LinearLayout>

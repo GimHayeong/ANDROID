@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/grdColor"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></GridView>
+
+    <LinearLayout
+        android:id="@+id/latButton"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+            android:id="@+id/btnClose"
+            android:text="@string/close_btn"
+            android:drawablePadding="2dip"
+            android:drawableLeft="@drawable/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

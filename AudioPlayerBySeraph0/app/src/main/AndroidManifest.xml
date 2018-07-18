@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.hyg.audioplayerbyseraph0">
+
+    <!-- Web-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Record
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+
+    <!-- access SD CARD -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Theater, Photograph
+    <uses-permission android:name="android.permission.CAMERA" />-->
+
+    <!-- capture : Camera App-->
+    <uses-feature android:name="android.hardware.Camera" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider android:name=".GenericFileProvider"
+            android:authorities="org.hyg.audioplayerbyseraph0.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name=".CaptureIntentMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity android:name=".TheaterMainActivity" />
+        <activity android:name=".PhotographMainActivity" />
+        <activity android:name=".CaptureIntentMainActivity"></activity>
+        -->
+
+        <!--
+        * 23이전 버전에서 사용되던 file:// 이 24이후 버전에서 content:// 로 해야 하는 문제 해결을 위해
+        * FileProvider 상속 구현한 경우 추가
+         <provider android:name=".GenericFileProvider"
+            android:authorities="org.hyg.audioplayerbyseraph0.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        -->
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minWidth="260dp"
+    android:paddingVertical="5dp"
+    android:paddingHorizontal="5dp"
+    tools:context="org.hyg.paintboard.ColorPaletteDialog">
+
+    <TextView
+        android:text="@string/lbl_color_dialog"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/grdPalette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:text="CLOSE"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

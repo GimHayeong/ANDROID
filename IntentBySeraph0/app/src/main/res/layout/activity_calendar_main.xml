@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.hyg.intentbyseraph0.CalendarMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+
+        <Button
+            android:id="@+id/btnPreviousMonth"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backward" />
+
+        <TextView
+            android:id="@+id/txtMonth"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNextMonth"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/backward"
+            android:gravity="center_horizontal"
+            android:rotation="180" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/grdMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffbbbbbb"
+        android:horizontalSpacing="0.5dp"
+        android:verticalSpacing="0.5dp"
+        android:paddingVertical="1dp"
+        android:paddingHorizontal="1dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"></GridView>
+
+</LinearLayout>

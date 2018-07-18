@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.hyg.randomnumberbyseraph0.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="500~1000 사이의 숫자입니다. 얼마일까요?"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edtNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtNum"
+        android:layout_alignBottom="@+id/edtNum"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:text="확인" />
+
+    <TextView
+        android:id="@+id/txtCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtNum"
+        android:layout_below="@+id/btnOK"
+        android:layout_marginTop="90dp"
+        android:text="입력횟수: " />
+
+    <TextView
+        android:id="@+id/txtHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignTop="@+id/txtCnt"
+        android:layout_marginEnd="60dp"
+        android:text="판정결과" />
+
+</RelativeLayout>

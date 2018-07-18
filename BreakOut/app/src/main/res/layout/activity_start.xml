@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_title"
+    tools:context="org.hyg.breakoutbyseraph0.StartActivity">
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_start"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:clickable="true"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgSetBgSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btnStart">
+
+        <RadioButton
+            android:id="@+id/rbBgSoundOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ON"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/rbBgSoundOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgSetSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_alignRight="@+id/rgSetBgSound"
+        android:layout_alignEnd="@+id/rgSetBgSound"
+        android:layout_below="@+id/rgSetBgSound">
+        <RadioButton
+            android:id="@+id/rbSoundOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ON"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/rbSoundOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgSetVib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_alignRight="@+id/rgSetSound"
+        android:layout_alignEnd="@+id/rgSetSound"
+        android:layout_below="@+id/rgSetSound">
+        <RadioButton
+            android:id="@+id/rbVibOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ON"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/rbVibOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_quit"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rgSetVib"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AudioPlayerBySeraph0</string>
+    <string name="play_button_text">▶</string>
+    <string name="pause_button_text">∥</string>
+    <string name="next_track_button_text">▶|</string>
+    <string name="stop_button_text">■</string>
+    <string name="recording_button_text">●</string>
+    <string name="play_movie_button_text">⊙</string>
+</resources>

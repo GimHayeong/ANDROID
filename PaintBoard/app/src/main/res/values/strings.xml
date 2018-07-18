@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Paint Board</string>
+    <string name="lbl_pen_dialog">선 굵기 선택</string>
+    <string name="lbl_color_dialog">선 색상 선택</string>
+    <string name="btn_close_text">Close</string>
+    <string name="btn_color_text">Color</string>
+    <string name="btn_pen_text">Pen</string>
+    <string name="btn_eraser_text">Eraser</string>
+    <string name="btn_undo_text">Undo</string>
+</resources>

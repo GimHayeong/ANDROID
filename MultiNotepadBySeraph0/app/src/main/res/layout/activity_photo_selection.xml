@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.hyg.seraph0.multinotepad.PhotoSelectionActivity">
+
+    <org.hyg.seraph0.multinotepad.CoverFlow
+        android:id="@+id/glyLoadingGallery"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"></org.hyg.seraph0.multinotepad.CoverFlow>
+
+    <TextView
+        android:id="@+id/txtSelectedPhoto"
+        android:text="@string/select_picture_message"
+        android:textColor="#ffffffff"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_below="@+id/glyLoadingGallery"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/imgSelectedPhoto"
+        android:layout_below="@+id/glyLoadingGallery"
+        android:layout_above="@+id/latButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/latButton"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                android:id="@+id/btnOk"
+                android:text="@string/confirm_btn"
+                android:textColor="#ff420000"
+                android:textSize="18sp"
+                android:layout_width="100dp"
+                android:layout_height="48dp" />
+            <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                android:id="@+id/btnCancel"
+                android:text="@string/cancel_btn"
+                android:textColor="#ff420000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="48dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

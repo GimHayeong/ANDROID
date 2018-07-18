@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    android:id="@+id/activity_start"
+    tools:context="org.hyg.slidingpuzzlebyseraph0.StartActivity">
+
+    <RadioGroup
+        android:id="@+id/rgBoardSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="117dp"
+        android:layout_marginLeft="345dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+        <RadioButton
+            android:id="@+id/rb3X3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#000080"
+            android:checked="true"
+            android:text="3x3"/>
+
+        <RadioButton
+            android:id="@+id/rb4X4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#000080"
+            android:layout_marginLeft="15dp"
+            android:text="4x4"/>
+
+        <RadioButton
+            android:id="@+id/rb5X5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#000080"
+            android:layout_marginLeft="15dp"
+            android:text="5x5"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="345dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+        <RadioButton
+            android:id="@+id/rbMusicOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:checked="true"
+            android:text="ON"/>
+
+        <RadioButton
+            android:id="@+id/rbMusicOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:layout_marginLeft="24dp"
+            android:text="OFF"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rgSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="345dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+        <RadioButton
+            android:id="@+id/rbSoundOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:checked="true"
+            android:text="ON"/>
+
+        <RadioButton
+            android:id="@+id/rbSoundOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:layout_marginLeft="24dp"
+            android:text="OFF"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgVib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="243dp"
+        android:layout_marginLeft="345dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+        <RadioButton
+            android:id="@+id/rbVibOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:checked="true"
+            android:text="ON"/>
+
+        <RadioButton
+            android:id="@+id/rbVibOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:layout_marginLeft="24dp"
+            android:text="OFF"/>
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/button_quit"
+        app:srcCompat="@drawable/button_quit" />
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_start"
+        android:layout_toLeftOf="@+id/btnQuit"
+        android:layout_toStartOf="@+id/btnQuit"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/button_start"/>
+
+</RelativeLayout>

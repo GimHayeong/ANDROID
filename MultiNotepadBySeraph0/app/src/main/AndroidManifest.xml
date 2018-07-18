@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.hyg.seraph0.multinotepad">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.Camera"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InsertActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PhotoCaptureActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PhotoSelectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".VideoRecordingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".VideoPlayActivity" />
+        <activity android:name=".VoiceRecordingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".VideoSelectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".VoicePlayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".HandwritingMakingActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ColorPaletteDialog"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".PenDialog"
+            android:theme="@android:style/Theme.Dialog" />
+    </application>
+
+</manifest>

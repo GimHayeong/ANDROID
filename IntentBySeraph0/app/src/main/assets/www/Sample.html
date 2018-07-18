@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>샘플페이지</title>
+        <script language="javascript">
+            var m_isNormal = true;
+            function changeFace(){
+                if(m_isNormal) {
+                    document.getElementById("face").src = "Images/face_angry.png";
+                    m_isNormal = false;
+                } else {
+                    document.getElementById("face").src = "Images/face_normal.png";
+                    m_isNormal = true;
+                }
+            }
+        </script>
+    </head>
+<body>
+    <a onClick="window.jsIf.clickOnFace()">
+        <div style="width:120px;margin:0px auto;padding:10px;text-align:center;border:20px solid #202020;">
+            <img id="face" src="Images/face_normal.png" />
+            <br/>
+        </div>
+    </a>
+</body>
+</html>

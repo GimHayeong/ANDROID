@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:text="행운의 주인공이 되세요." />
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMsg"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="61dp"
+        android:tag="1"
+        android:text="당첨" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnOne"
+        android:layout_alignBottom="@+id/btnOne"
+        android:layout_below="@+id/btnOne"
+        android:layout_marginStart="100dp"
+        android:tag="2"
+        android:text="당첨" />
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnOne"
+        android:layout_alignBottom="@+id/btnOne"
+        android:layout_below="@+id/btnOne"
+        android:layout_marginStart="195dp"
+        android:tag="3"
+        android:text="당첨" />
+
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnOne"
+        android:layout_alignBottom="@+id/btnOne"
+        android:layout_below="@+id/btnOne"
+        android:layout_marginStart="290dp"
+        android:tag="4"
+        android:text="당첨" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="판정결과" />
+
+
+</RelativeLayout>

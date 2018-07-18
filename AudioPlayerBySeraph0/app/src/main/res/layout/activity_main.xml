@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.hyg.audioplayerbyseraph0.MainActivity">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="#FFDDDDDD"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="clip_vertical"
+            android:textColor="#FF666666"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/play_button_text" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="50dp"
+            android:textColor="#FF666666"
+            android:layout_height="wrap_content"
+            android:text="@string/next_track_button_text" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:textSize="18sp"
+            android:textColor="#FF666666"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_button_text" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="title"
+            android:textColor="#FF666666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FF666666"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnRecording"
+            android:textColor="@color/colorPlay"
+            android:text="@string/recording_button_text"
+            android:hint="녹음시작"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnPlayRecording"
+            android:textColor="@color/colorPlay"
+            android:text="@string/play_button_text"
+            android:hint="녹음재생"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#FF999999"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="MOVIE"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnPlayVideo"
+            android:text="@string/play_movie_button_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnVolUp"
+            android:text="+"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnVolDn"
+            android:text="-"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <VideoView
+        android:id="@+id/vdoMovie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

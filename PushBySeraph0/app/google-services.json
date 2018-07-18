@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "80999997389",
+    "firebase_url": "https://pushbyseraph0.firebaseio.com",
+    "project_id": "pushbyseraph0",
+    "storage_bucket": "pushbyseraph0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80999997389:android:7e954f9e6430b08f",
+        "android_client_info": {
+          "package_name": "org.hyg.push"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80999997389-fstv0mqf2gnhupqel8869v1j8kabt4fl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAUniFqbxkHxjCohufSmDjCZcn9bxofGQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

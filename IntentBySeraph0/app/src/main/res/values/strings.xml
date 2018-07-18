@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">IntentBySeraph0</string>
+    <string name="mnu_custom">Custom</string>
+    <string name="mnu_sale">Sale</string>
+    <string name="mnu_product">Product</string>
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.hyg.seraph0.multinotepad.InsertActivity">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:orientation="vertical"
+        android:id="@+id/latContents">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/latMedia"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imgItemPhoto"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="@dimen/item_height"
+                android:background="#fffeff85"
+                android:scaleType="fitCenter"
+                android:padding="5dp"
+                android:src="@drawable/person_add" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                    android:id="@+id/btnVideo"
+                    android:layout_width="100dp"
+                    android:layout_height="76dp"
+                    android:text="@string/video_btn"
+                    android:textColor="#ff420000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                    android:id="@+id/btnVoice"
+                    android:layout_width="100dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/voice_btn"
+                    android:textColor="#ff420000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/memoLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <EditText
+                    android:background="@drawable/memo_back"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_width="@dimen/item_width"
+                    android:id="@+id/edtItemMemo"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:gravity="top"/>
+                <ImageView
+                    android:background="@drawable/handwriting_back"
+                    android:layout_height="160dp"
+                    android:layout_width="200dp"
+                    android:id="@+id/imgItemHandwriting"
+                    android:scaleType="centerInside"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                    android:id="@+id/btnText"
+                    android:layout_width="100dp"
+                    android:layout_height="76dp"
+                    android:text="@string/text_btn"
+                    android:textColor="#ff420000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                    android:id="@+id/btnHandwriting"
+                    android:layout_width="100dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/handwriting_btn"
+                    android:textColor="#ff420000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/dateLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:id="@+id/btnDate"
+                android:layout_gravity="center_horizontal"/>
+
+            <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                android:id="@+id/btnTime"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/buttonLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                android:id="@+id/btnSave"
+                android:layout_height="48dp"
+                android:layout_width="90dp"
+                android:textColor="#ff420000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/save_btn"/>
+            <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                android:id="@+id/btnDelete"
+                android:layout_height="48dp"
+                android:layout_width="90dp"
+                android:textColor="#ff420000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/delete_btn"
+                android:visibility="gone"/>
+
+            <org.hyg.seraph0.multinotepad.common.TitleBitmapButton
+                android:id="@+id/btnCancel"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/close_btn"
+                android:textColor="#ff420000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
